@@ -1,10 +1,7 @@
 name: OCI Auto-Apply Retry
 
 on:
-  schedule:
-    # Runs automatically every 15 minutes 24/7
-    - cron: '*/15 * * * *'
-  workflow_dispatch: # Allows manual trigger from GitHub UI anytime
+  workflow_dispatch: # Allows triggers from cron-job.org via API and manual triggers from the GitHub UI
 
 jobs:
   run-oci-apply:
